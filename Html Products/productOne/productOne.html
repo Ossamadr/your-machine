@@ -12,7 +12,7 @@
 </head>
 
 <body>
-   
+
     <header dir="rtl">
         <div class="image">
             <img src="./Surgi Panama.png" alt="">
@@ -32,20 +32,22 @@
             <span>دج</span>
         </div>
     </header>
-    <form class="form" dir="rtl" onsubmit="return validateForm()">
+    <form action="https://formspree.io/f/mvoekezn" method="POST" class="form" dir="rtl"
+        onsubmit="return validateForm()">
         <label id="Qtt">الكمية</label>
-        <input type="text" pattern="[1-9]|10" maxlength="2" id="priceId">
+        <input name="الكمية" type="text" pattern="[1-9]|10" maxlength="2" id="priceId">
         <p id="warning" style="color: #eeff05; display: none;"> تحذير: كمية كبيرة لإجراء طلب صحيح الرجاء
             الاختيار بين 1 إلى 10</p>
         <label for="">إسم المنتج</label>
         <input class="inputPro" type="text" value="Surgi Panama" readonly>
-        <label for="fname">الإسم الكامل</label>
-        <input name="fname" placeholder="أدخل إسمك الكامل" class="input" type="text">
-        <label for="num">رقم الهاتف</label>
-        <input name="num" placeholder="رقم الهاتف" class="input" type="text" pattern="0\d{9}" oninput="checkPhoneNumber(this)">
+        <label for="الاسم">الإسم الكامل</label>
+        <input name="الاسم" placeholder="أدخل إسمك الكامل" class="input" type="text">
+        <label for="الرقم">رقم الهاتف</label>
+        <input name="الرقم" placeholder="رقم الهاتف" class="input" type="number" pattern="0\d{9}"
+            oninput="checkPhoneNumber(this)">
         <span id="phone-error" style="color: #eeff05; display: none;">يرجى إدخال رقم هاتف صحيح </span>
         <label for="">إختر ولايتك</label>
-        <select name="state">
+        <select name="الولاية">
             <option value="" selected disabled>اختر ولايتك</option>
             <option value="أدرار">1. ولاية أدرار</option>
             <option value="الشلف">2. ولاية الشلف</option>
@@ -108,6 +110,7 @@
         </select>
         <button style="background-color: rgb(12, 142, 99);">أطلب الان</button>
     </form>
+    <input style="border: none; width: 100%;" class="inputPro" type="text" value="سيتم التواصل معكم عبر رقم الهاتف المدخل" readonly>
     <script src="productOne.js"></script>
 </body>
 

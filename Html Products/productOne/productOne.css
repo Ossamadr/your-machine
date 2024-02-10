@@ -106,19 +106,22 @@ option {
   outline: none;
   text-align: center;
   font-size: 20px;
+  background-color: white;
+  color: rgb(204, 2, 2);
 }
 .Quantity {
- display: flex;
- align-items: center;
- gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .Quantity #Qtt {
-  color: white;
+  background: rgb(255, 255, 255);
 }
 #priceId {
   width: 60px;
   height: 30px;
   font-size: 20px;
   font-weight: bold;
-
+  color: rgb(12, 186, 119);
+  background-color: rgb(255, 255, 255);
 }
